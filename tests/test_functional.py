@@ -18,6 +18,8 @@ def test_airmozilla_example():
     # The sample file is identical plus it has two additional
     # keys. One of them nested.
     sample = json.load(open(sample_file))
-    assert sorted(sample.keys()) == sorted(result.keys() + ['whatsdeployed'])
+    sample_keys = sample.keys()
+    result_keys = list(result.keys())
+    assert sorted(sample_keys) == sorted(result_keys + ['whatsdeployed'])
     assert 'other_stuff' in sample['participate'].keys()
     assert 'other_stuff' not in result['participate'].keys()

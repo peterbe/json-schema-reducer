@@ -43,7 +43,6 @@ def dictify(thing):
         elif os.path.isfile(thing):
             thing = json.load(open(thing))
         else:
-            assert isinstance(thing, basestring)
             thing = json.loads(thing)
     assert isinstance(thing, dict)
     return thing
@@ -54,7 +53,7 @@ if __name__ == '__main__':
     schema = json.load(open(sys.argv[1]))
     json_files = sys.argv[2:]
     for json_file in json_files:
-        print json.dumps(
+        print(json.dumps(
             make_reduced_dict(
                 schema,
                 json.load(open(json_file)),
@@ -62,4 +61,4 @@ if __name__ == '__main__':
 
             ),
             indent=4, sort_keys=True
-        )
+        ))
