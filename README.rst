@@ -54,5 +54,8 @@ Simply run::
 Version History
 ===============
 
+0.1.1
+  * Tidying up loose ends
+
 0.1.0
   * First, hopefully, working version.

@@ -7,7 +7,7 @@ _here = os.path.dirname(__file__)
 
 setuptools.setup(
     name='json-schema-reducer',
-    version='0.1.0',
+    version='0.1.1',
     description='Extract from a JSON/dict only whats in the JSON Schema',
     long_description=open(os.path.join(_here, 'README.rst')).read(),
     author='Peter Bengtsson',
@@ -15,7 +15,6 @@ setuptools.setup(
     license='MIT',
     py_modules=['json_schema_reducer'],
     url='https://github.com/peterbe/json-schema-reducer',
-    # include_package_data=True,
     include_package_data=False,
     install_requires=[],
     setup_requires=['pytest-runner'],
@@ -24,5 +23,6 @@ setuptools.setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
     ],
 )

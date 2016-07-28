@@ -57,8 +57,6 @@ if __name__ == '__main__':
             make_reduced_dict(
                 schema,
                 json.load(open(json_file)),
-                # verbose=True
-
             ),
             indent=4, sort_keys=True
         ))
