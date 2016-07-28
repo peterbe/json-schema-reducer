@@ -17,4 +17,5 @@ deploy:
     secure: VXXDyInOPX2cDoS28saNZKna4dS4l31dr7f/loimYQ3Afp4SgXuJU06qcGVhHQ2/wCA5S14S0RB/CIp7K7mKC08s2E9spEijV+z6Xg/KdfqBWQQ/Rp59AYa/sMNFztw1UZYzxt4eJA2fm9ilRaN1hMjrXuUssMihvJR6AZRWOLZSoqPz1o3yGNo5ZsrIcBV1nOnsQd5+pBMduSxgeyOrDB8HfKGEWCKjdNZsIEZ+TS4+CsQZZ8tOh+dlvBoKlOJ7gpl6cZDVCEA/ORV2qNKZJWV4fFJsXtftnrvBq0UGj/UbPbA7dodiFV+nnTiYaltCJs5L45KENRIXuUpyrnmOFa2RHK19/Npy+v2b0aAtLZkj759IF2KyO+W63HhGD4k4CRRX1YnnX26LAjOlMNq/Q9uXF3SpL53foDreIjKwfpvLGNFi0tcB6FOtxMGgFXnFksUXmy59F//RKsQ8BYRtiLlQKyKnkU4mzfaIV+urSJ7cJ10hx6/VoEPMC6r+TK7f6mfC4crWzvB2Tua3MbO1f3q/HjUodH1k0/S29q5q2vi6zbRWDG4x+F+qy4I4Gtj4LmEZkP1pME5olFa0ha06VPJ7gxxlxdqTCkXrzgp2h/pbdjDLSN0CpPstHT3Eo07MHpolElV/WULiYxQe062Mmcvup6MI7O+gNV0yNgW5q4o=
   distributions: sdist bdist_wheel
   on:
+    tags: true
     repo: peterbe/json-schema-reducer
