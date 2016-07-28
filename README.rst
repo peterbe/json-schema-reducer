@@ -15,6 +15,8 @@ JSON/dict you supply is valid according to the JSON Schema you also supply.
 Installation
 ============
 
+Simple install with ``pip``::
+
     pip install json-schema-reducer
 
 How to use it
