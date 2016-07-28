@@ -1,0 +1,6 @@
+dist/
+build/
+.cache/
+.eggs/
+.tox/
+json_schema_reducer.egg-info/

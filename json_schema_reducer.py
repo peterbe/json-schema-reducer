@@ -2,6 +2,10 @@ import json
 import os
 
 
+class ValidationError(Exception):
+    """raised when something is fundamentally wrong."""
+
+
 def make_reduced_dict(schema, original):
     """return a new dict based on a schema and a payload.
     Only the properties from the schema are put in this new dict."""
@@ -13,6 +17,7 @@ def make_reduced_dict(schema, original):
 
 def _make_reduced_dict(schema, original):
     new_dict = {}
+    assert schema['type'] == 'object'
     required = schema.get('required', [])
     for key, prop in schema['properties'].items():
         if prop.get('type') == 'object':
@@ -23,7 +28,10 @@ def _make_reduced_dict(schema, original):
             )
         else:
             if key in required or key in original:
-                value = original[key]  # try:except attributeerror
+                try:
+                    value = original[key]
+                except KeyError:
+                    raise ValidationError(key)
                 new_dict[key] = value
     return new_dict
 

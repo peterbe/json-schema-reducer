@@ -1,0 +1,36 @@
+{
+    "name": "Air Mozilla",
+    "description": "Air Mozilla is the Internet multimedia presence of Mozilla, with live and pre-recorded shows, interviews, news snippets, tutorial videos, and features about the Mozilla community.",
+    "repository": {
+        "url": "https://github.com/mozilla/airmozilla",
+        "license": "MPL2",
+        "tests": "https://travis-ci.org/mozilla/airmozilla/"
+    },
+    "participate": {
+        "home": "https://wiki.mozilla.org/Air_Mozilla",
+        "docs": "https://github.com/mozilla/airmozilla#how-to-get-it-running-locally-from-scratch",
+        "irc": "irc://irc.mozilla.org/#airmozilla-dev",
+        "irc-contacts": ["Richard", "peterbe"],
+	    "other_stuff": "junk!"
+    },
+    "bugs": {
+        "list": "https://bugzilla.mozilla.org/buglist.cgi?product=Webtools&component=Air%20Mozilla&resolution=---",
+        "report": "https://bugzilla.mozilla.org/enter_bug.cgi?format=guided#h=dupes%7CAir+Mozilla%7COther",
+        "goodfirstbugs": "https://bugzilla.mozilla.org/buglist.cgi?resolution=---&status_whiteboard_type=allwordssubstr&query_format=advanced&status_whiteboard=%5Bgood%20first%20bug%5D&bug_status=NEW&component=Air%20Mozilla&product=Webtools",
+        "priorities": "https://bugzilla.mozilla.org/report.cgi?x_axis_field=priority&y_axis_field=assigned_to&z_axis_field=&query_format=report-table&classification=Server+Software&product=Webtools&component=Air%20Mozilla&resolution=---&format=table&action=wrap"
+    },
+    "urls": {
+        "prod": "https://air.mozilla.org/",
+        "stage": "https://air.allizom.org/",
+        "dev": "https://air-dev.allizom.org/"
+    },
+    "keywords": [
+        "django",
+        "jquery",
+        "postgresql",
+        "video",
+        "angularjs",
+        "python"
+    ],
+    "whatsdeployed": "http://whatsdeployed.io/s-6pt"
+}

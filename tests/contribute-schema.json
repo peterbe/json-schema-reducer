@@ -1,0 +1,102 @@
+{
+    "type": "object", 
+    "$schema": "http://json-schema.org/draft-04/schema#", 
+    "title": "Mozilla's contribute.json", 
+    "required": [
+        "name", 
+        "description", 
+        "repository"
+    ], 
+    "properties": {
+        "name": {
+            "type": "string"
+        }, 
+        "participate": {
+            "type": "object", 
+            "required": [
+                "docs"
+            ], 
+            "properties": {
+                "mailing-list": {
+                    "type": "string"
+                }, 
+                "home": {
+                    "type": "string"
+                }, 
+                "irc-contacts": {
+                    "type": "array", 
+                    "items": {
+                        "type": "string"
+                    }
+                }, 
+                "irc": {
+                    "type": "string"
+                }, 
+                "docs": {
+                    "type": "string"
+                }
+            }
+        }, 
+        "repository": {
+            "type": "object", 
+            "required": [
+                "url", 
+                "license"
+            ], 
+            "properties": {
+                "type": {
+                    "type": "string"
+                }, 
+                "url": {
+                    "type": "string"
+                }, 
+                "license": {
+                    "type": "string"
+                }, 
+                "clone": {
+                    "type": "string"
+                }, 
+                "tests": {
+                    "type": "string"
+                }
+            }
+        }, 
+        "keywords": {
+            "type": "array", 
+            "items": {
+                "type": "string"
+            }
+        }, 
+        "description": {
+            "type": "string"
+        }, 
+        "urls": {
+            "type": "object", 
+            "properties": {
+                "stage": {
+                    "type": "string"
+                }, 
+                "dev": {
+                    "type": "string"
+                }, 
+                "prod": {
+                    "type": "string"
+                }
+            }
+        }, 
+        "bugs": {
+            "type": "object", 
+            "properties": {
+                "mentored": {
+                    "type": "string"
+                }, 
+                "report": {
+                    "type": "string"
+                }, 
+                "list": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
