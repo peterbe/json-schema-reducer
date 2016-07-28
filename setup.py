@@ -7,7 +7,7 @@ _here = os.path.dirname(__file__)
 
 setuptools.setup(
     name='json-schema-reducer',
-    version='0.1.2',
+    version='0.1.3',
     description='Extract from a JSON/dict only whats in the JSON Schema',
     long_description=open(os.path.join(_here, 'README.rst')).read(),
     author='Peter Bengtsson',

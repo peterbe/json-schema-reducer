@@ -54,6 +54,11 @@ Simply run::
 Version History
 ===============
 
+
+0.1.3
+  * Better, but basic, cli (e.g. ``--help``)
+  * Support for optional nested keys
+
 0.1.2
   * Correct README restructured text
 
