@@ -4,7 +4,7 @@ python: 3.5
 env:
   - TOX_ENV=py27
   - TOX_ENV=py35
-  - TOX_ENV=lint
+  - TOX_ENV=flake8
 branches:
   only:
   - master
