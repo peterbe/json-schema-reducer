@@ -54,6 +54,8 @@ Simply run::
 Version History
 ===============
 
+0.1.4
+  * Universal wheel
 
 0.1.3
   * Better, but basic, cli (e.g. ``--help``)
