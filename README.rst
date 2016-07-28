@@ -38,9 +38,9 @@ Or this::
 
 Or this::
 
->>> make_reduced_dict(
-...   json.load(open('schema.json')),
-...   json.load(open('mything.json')))
+    >>> make_reduced_dict(
+    ...   json.load(open('schema.json')),
+    ...   json.load(open('mything.json')))
 
 
 Runnings tests
@@ -53,6 +53,9 @@ Simply run::
 
 Version History
 ===============
+
+0.1.2
+  * Correct README restructured text
 
 0.1.1
   * Tidying up loose ends
