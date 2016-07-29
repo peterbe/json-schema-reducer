@@ -19,3 +19,4 @@ deploy:
   on:
     tags: true
     repo: peterbe/json-schema-reducer
+    python: "2.7"
